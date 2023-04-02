@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ClaimsInitialAppSuite" data-provider-thread-count="3" thread-count="3" parallel="instances">
+    <parameter name="BrowserName" value="${BrowserName}" />
+    <!-- <parameter name="URL" value="${URL}" />  -->
+    <parameter name="SSIURL" value="${SSIURL}" />
+    <parameter name="TDFilePath" value="${TDFilePath}" />
+	<parameter name="reportLogLevel" value="INFO" />
+	<parameter name="UATURL_FLAG" value="${UATURL_FLAG}" />
+	
+	
+	
+	<test name="ClaimsInitialAppTest" preserve-order="true">
+		<classes>
+			<class name ="com.AutomationFramework.SSITC" />	
+		</classes>
+	</test>
+</suite>
